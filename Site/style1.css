@@ -1,0 +1,395 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url(multimedia/4977210.jpg);
+}
+
+
+.gridClass{
+    display: grid;
+    grid-template-areas: 
+    'nav    header  header  header'
+    'nav    main    main    main'
+    'nav    foot    foot    foot';
+
+    grid-template-rows: max-content auto max-content; 
+    grid-template-columns: 70px auto auto auto;
+
+    width: auto;
+    height: 100vh;
+}
+
+
+
+header {
+    grid-area: header;
+    background-color: hsl(0, 0%, 90%);
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+header img{
+    width: 120px;
+    margin: 20px;
+}
+
+header li{
+    list-style: none;
+    margin: 15px;
+}
+
+header a{
+    text-decoration: none;
+    color: hsl(0, 0%, 30%);
+    font-family: 'Fjalla One', sans-serif;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+.navRedes {
+    grid-area: nav;
+
+    background-color: hsl(0, 0%, 90%);
+    height: 100%;
+    width: 70px;
+    
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.ulRedes{
+    list-style: none;
+    font-size: 30px;
+}
+
+.navRedes i {
+    color: hsl(0, 0%, 50%);
+    margin: 2vh 0;
+}
+
+.navRedes i:hover {
+    transition: all 1s;
+    color: hsl(0, 0%, 10%);
+}
+
+
+
+footer {
+    grid-area: foot;
+
+    background-color: hsla(0, 0%, 90%, 0.541);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 60px;
+    font-family:'Fjalla One', sans-serif;   
+}
+
+footer p{
+    font-size: 15px;
+    margin: 15px;
+    color:hsl(0, 0%, 30%);
+}
+
+footer i{
+    color: hsl(0, 0%, 30%);
+    margin: 30px;
+}
+
+footer i:hover {
+    color: hsl(229, 16%, 10%);
+}
+
+
+
+main {
+    grid-area: main;
+
+    background-color: hsl(0, 0%, 90%);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mainIndex article{
+    display: flex;
+    min-width: 150px;
+    width: 15%;
+    height: 200px;
+    border-radius: 10px;
+    margin: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mainIndex article:hover{
+    transform: scale(1.05);
+    transition: 120ms;
+}
+
+.mainIndex article div{
+    display: flex;
+    background-color: hsl(0, 0%, 90%);
+    width: 140px;
+    height: 140px;
+    border-radius: 150px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid hsl(0, 0%, 70%);
+} 
+
+.mainIndex article div:hover{
+    border: 3px solid hsl(0, 45%, 50%);
+}
+
+
+
+h1{
+    font-family: 'Bebas Neue', cursive;
+    color: hsl(0, 0%, 10%);
+}
+
+h2{
+    font-family: 'Bebas Neue', cursive;
+    color: hsl(0, 0%, 20%);
+}
+
+h3{
+    font-family: 'Bebas Neue', cursive;
+    color: hsl(0, 0%, 50%);
+}
+
+
+
+.mainPerfil{
+    display: grid;
+
+    grid-template-areas: 
+    'description description description'
+    'experience scholarship achieve'
+    'testimonials testimonials testimonials'
+    'myT myN myPL'
+    'contact contact null';
+    
+    grid-template-rows: auto auto auto auto auto; 
+    grid-template-columns: auto auto auto;
+
+    width: auto;
+    height: auto;
+
+    padding: 2% 5%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    gap: 50px;
+}
+
+.description{
+    grid-area: description;
+    display: flex;
+    flex-direction: column;
+}
+.experience{
+    grid-area: experience;
+}
+.scholarship{
+    grid-area: scholarship;
+}
+.achieve{
+    grid-area: achieve;
+}
+.testimonials{
+    grid-area: testimonials;
+}
+.myT{
+    grid-area: myT;
+    margin: 20px;
+    width: 30%;
+    height: 400px;
+    border-radius: 10px;
+    overflow: scroll;
+}
+.myPL{
+    grid-area: myPL;
+    margin: 20px;
+    width: 30%;
+    border-radius: 10px;
+}
+.contact{
+    grid-area: contact;
+}
+
+
+.mainPerfil .articuleCliente{
+    margin: 20px;
+    padding: 20px;
+    border: solid 2px hsl(0, 0%, 60%);
+    border-radius: 10px;
+    background-color:  hsl(0, 0%, 95%);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mainPerfil .articuleCliente h3{
+    width: 10%;
+}
+.mainPerfil .articuleCliente p{
+    width: 90%;
+}
+
+
+
+
+.gridClassBlog{
+    display: grid;
+    grid-template-areas: 
+    'nav    header  header  header'
+    'nav    main    main    asideBlog'
+    'nav    foot    foot    foot';
+
+    grid-template-rows: max-content auto max-content; 
+    grid-template-columns: 70px auto auto 20%;
+
+    width: auto;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.asideBlog{
+    grid-area: asideBlog;
+
+    position: sticky;
+    top: -10px;
+
+    height: max-content;
+
+    margin: 0px 0px 0px 10px;
+    padding: 20px;
+    background-color: hsl(0, 0%, 85%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px 0 0 10px;
+}
+
+.mainBlog{
+    border-radius: 0 10px 0 0;
+}
+
+
+.mainBlog article {
+    width: 300px;
+    height: 400px;
+    background-color:hsl(0, 0%, 85%); 
+    margin: 20px;
+    cursor: pointer;
+    border: solid 3px hsl(0, 0%, 60%); 
+    border-radius: 10px;
+}
+
+ .mainBlog article img {
+    width: 100%;
+    height: 60%;
+    border-radius: 10px 10px 0px 0px ;
+}
+
+ .mainBlog article div {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-evenly;
+    margin: 0 20px;
+}
+
+.asideBlog p{
+    margin: 20px 0;
+}
+
+.asideBlog button{
+    border-radius: 50px;
+    padding: 2px;
+    cursor: pointer; 
+    border: solid 1px hsl(0, 0%, 20%);
+    margin: 2px;
+}
+
+.asideBlog button:hover{
+    background-color: hsl(0, 80%, 80%);
+    border: solid 1px hsl(0, 100%, 80%);
+}
+
+
+@media only screen and (max-width: 480px){
+    header {
+        margin-bottom: 10px;
+    }
+    
+    header img{
+        width: 100px;
+        margin: 10px;
+    }
+    
+    .mainIndex article{
+        display: flex;
+        width: 100%;
+        height: 150px;
+        margin: 10px;    
+    }
+    
+}
+
+@media only screen and (max-width: 930px){
+    .mainPerfil{
+        grid-template-areas: 
+        'description'
+        'experience' 
+        'scholarship' 
+        'achieve'
+        'testimonials'
+        'myT'
+        'myPL'
+        'contact';
+        
+        grid-template-rows: auto auto auto auto auto auto auto auto; 
+        grid-template-columns: auto ;
+    }
+
+    .mainPerfil .articuleCliente{
+        flex-direction: column;
+    }
+
+    .mainPerfil .articuleCliente h3{
+        width: auto;
+    }
+
+    .asideBlog{
+        display: none;
+    }
+
+    .mainBlog{
+        border-radius: 0;
+    }
+
+    .gridClassBlog{
+        display: grid;
+        grid-template-areas: 
+        'nav    header'
+        'nav    main'
+        'nav    foot';
+    
+        grid-template-rows: max-content auto max-content; 
+        grid-template-columns: 70px auto auto;
+            
+    }
+
+}
