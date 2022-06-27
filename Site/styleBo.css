@@ -1,0 +1,72 @@
+
+body{
+    background-image: url(multimedia/4977210.jpg);
+}
+
+a{
+    text-decoration: none;
+    color: hsl(0, 0%, 50%);
+}
+
+a:hover{
+    text-decoration: none;
+    color: hsl(0, 0%, 10%);
+    transition: all 0.5s;
+}
+
+.navRedes ul,
+#header ul
+{
+    list-style: none;
+    margin: 5px;
+    padding: 0;
+}
+
+header {
+    background-color: hsl(0, 0%, 90%);
+}
+
+main{
+    background-color: hsla(0, 0%, 90%, 0.900);
+}
+
+.navRedes{
+    background-color: hsl(0, 0%, 90%);
+    height: 100vh; 
+    max-width: 100px;
+}
+
+.navRedes i,
+footer i{
+    font-size: 30px;
+    color: hsl(0, 0%, 50%);
+}
+
+i:hover {
+    transition: all 0.5s;
+    color: hsl(0, 0%, 10%);
+}
+
+footer{
+    background-color: hsla(0, 0%, 90%, 0.800);
+}
+
+footer i{
+    font-size: 60px;
+    color: hsl(0, 0%, 30%);
+}
+
+.cardW{
+    max-width: 400px;
+    margin: 10px 0;
+}
+
+.card-img-top{
+    max-height: 300px;
+}
+
+.cardW:hover{
+    transform: scale(1.10);
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 10;
+}
