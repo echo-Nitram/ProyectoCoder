@@ -6,204 +6,255 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Work</title>
 
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-        
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="style1.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="styleBo.css">
 </head>
 <body>
 
-    <section class="gridClass">
+    <section class="container-fluid">
 
-        <!-- Inicio / Barra de redes sociales  -->
-        <nav class="navRedes">
-                <ul class="ulRedes">
-                    <li>
-                        <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com" target="_blank"><i class="fa fa-github"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://meetup.com" target="_blank"><i class="fa fa-meetup"></i></a>
-                    </li>
-                </ul>
-        </nav>
-        <!-- Fin / Barra de redes sociales  -->
+        <section class="row">
 
-        <!-- Inicio / encabezamiento y navegación del sitio  -->
-        <header id="header" class="header">
+            <!-- Inicio - Barra de redes sociales -->
+            <div class="col-1 d-flex flex-column justify-content-center align-items-center sticky-top  navRedes">
 
-            <a href="index.html"><img src="multimedia/perfil1.png" alt="Imagen de perfil"></a>
+                        <nav >
+                            <ul>
+                                <li>
+                                    <a href="https://google.com" target="_blank">
+                                        <i class="bi bi-google"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com" target="_blank">
+                                        <i class="bi bi-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://linkedin.com/" target="_blank">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com" target="_blank">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
 
-            <nav class="navHeader">
-                <ul class="ulHeader">
-                    <li><a href="perfile.html">Perfile</a></li>
-                    <li><a href="perfile.html#Clients">Client Testimonials</a></li>
-                    <li><a href="perfile.html#Contact">Contact Me</a></li>
-                </ul>
-            </nav>
+            </div>
+            <!-- Fin - Barra de redes sociales -->
 
-            <nav class="navHeader">
-                <ul class="ulHeader">
-                    <li><a href="index.html">All Work</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                </ul>
-            </nav>
+            <!-- Header Main Footer -->
+            <div class="col">
 
-        </header>
-        <!-- Fin / encabezamiento y navegación del sitio  -->
+                <!-- Inicio - Header -->
+                <section class="row mb-3">
+
+                        <header id="header" class="d-flex align-items-end">
+
+                            <a href="index.html"><img src="multimedia/perfil1.png" alt="Imagen de perfil" class="m-4" style="width: 120px;"></a>
+ 
+                            <nav class="navbar navbar-expand-lg">
+                                <div class="container-fluid">
+
+                                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
+
+                                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                                      <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="index.html">Trabajos</a>
+                                      </li>
+
+                                      <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="perfile.html">Perfil</a>
+                                      </li>
+
+                                      <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="perfile.html#Clients">Clientes</a>
+                                      </li>
+
+                                      <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="perfile.html#Contact">Contactame</a>
+                                      </li>
+
+                                      <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
+                                      </li>
+
+                                    </ul>
+                                    
+                                  </div>
+                                  
+                                </div>
+                            </nav>
+
+                        </header>
+                        
+                </section>
+                <!-- Fin - Header -->
+                    
+                <!-- Inicio - Main -->
+                <main class="row mainIndex row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+                        <div class="col">
+
+                            <div class="card cardW shadow">
+                                <img src="multimedia/1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card cardW shadow">
+                                <img src="multimedia/2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card cardW shadow">
+                                <img src="multimedia/3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo earum a magni, beatae aliquid expedita? Voluptatibus.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col">
+
+                            <div class="card cardW shadow">
+                                <img src="multimedia/4.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ipsum, dignissimos nesciunt amet est eius magni vero repellat. Atque quibusdam eius rem omnis aspernatur fugit hic unde deserunt natus asperiores?
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card cardW shadow">
+                                <img src="multimedia/5.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias beatae ipsum nesciunt velit recusandae. Ipsa, fugit adipisci inventore distinctio facere cupiditate ratione.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col">
+
+                            <div class="card cardW shadow">
+                                <img src="multimedia/6.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda reprehenderit incidunt voluptatibus magnam impedit.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card cardW shadow">
+                                <img src="multimedia/7.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda reprehenderit incidunt voluptatibus magnam impedit. Blanditiis vel aspernatur placeat fuga, similique neque quo dolore minima sapiente a eveniet, odio temporibus?.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col">
+
+                            <div class="card cardW shadow">
+                                <img src="multimedia/8.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At nisi veritatis adipisci ut quibusdam corporis maiores inventore quia dolorum facere numquam labore impedit fuga obcaecati illum.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card cardW shadow">
+                                <img src="multimedia/9.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fuga magnam porro omnis quasi voluptates ab repellendus ad obcaecati.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col">
+
+                            <div class="card cardW shadow">
+                                <img src="multimedia/10.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda reprehenderit incidunt voluptatibus magnam impedit. Blanditiis vel aspernatur placeat fuga, similique neque quo dolore minima sapiente a eveniet, odio temporibus? Vel. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card cardW shadow">
+                                <img src="multimedia/11.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda reprehenderit incidunt voluptatibus magnam impedit. Blanditiis vel aspernatur placeat fuga, similique neque quo dolore minima sapiente a eveniet, odio temporibus? Vel.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                       
+                </main>
+                <!-- Fin - Main -->
+
+                <!-- Inicio - Footer -->
+                <section class="row">
+                        
+                    <footer class="d-flex align-items-end justify-content-between mt-3">
+
+                            <p>Living, learning, & leveling up one day at a time.</p>
+                            <a href="#header"><i class="bi bi-arrow-up-square m-3 d-flex align-items-center justify-content-center"></i></a>
+                            
+                            
+                    </footer>
+
+                </section>
+                <!-- Fin - Footer -->
+                    
+            </div>
+            <!-- Header Main Footer -->
+
+        </section>
         
-        <!-- Inicio / nuevos trabajos -->
-        <main class="mainIndex">
-
-            <!-- Al hacer click en uno de los articulos la idea es que mostrara en detalle en un Pop-up -->
-            <article style="background-image: url(multimedia/1.png);">
-                <div>
-                    <h2>EXAMPLE tree</h2>
-                    <h3>WEBSITE</h3>
-                </div>
-            </article>
-
-            <article style="background-image: url(multimedia/2.png);">
-                <div>
-                    <h2>EXAMPLE TWO</h2>
-                    <h3>WEBSITE</h3>
-                </div>
-            </article>
-
-            <article style="background-image: url(multimedia/3.png);">
-                <div>
-                    <h2>EXAMPLE THREE</h2>
-                    <h3>WEBSITE</h3>
-                </div>
-            </article>
-
-            <article style="background-image: url(multimedia/4.png);">
-                <div>
-                    <h2>EXAMPLE UNO</h2>
-                    <h3>WEBSITE</h3>
-                </div>
-            </article>
-
-            <article style="background-image: url(multimedia/5.png);">
-                <div>
-                    <h2>EXAMPLE TWO</h2>
-                    <h3>WEBSITE</h3>
-                </div>
-            </article>
-
-            <article style="background-image: url(multimedia/6.png);">
-                <div>
-                    <h2>EXAMPLE THREE</h2>
-                    <h3>WEBSITE</h3>
-                </div>
-            </article>
-    <section></section>
-            <article style="background-image: url(multimedia/7.png);">
-                <div>
-                    <h2>EXAMPLE UNO</h2>
-                    <h3>WEBSITE</h3>
-                </div>
-            </article>
-
-            <article style="background-image: url(multimedia/8.png);">
-                <div>
-                    <h2>EXAMPLE TWO</h2>
-                    <h3>WEBSITE</h3>
-                </div>
-            </article>
-
-            <article style="background-image: url(multimedia/9.png);">
-                <div>
-                    <h2>EXAMPLE THREE</h2>
-                    <h3>WEBSITE</h3>
-                </div>
-            </article>
-
-            <article style="background-image: url(multimedia/10.png);">
-                <div>
-                    <h2>EXAMPLE UNO</h2>
-                    <h3>WEBSITE</h3>
-                </div>
-            </article>
-
-            <article style="background-image: url(multimedia/11.png);">
-                <div>
-                    <h2>EXAMPLE TWO</h2>
-                    <h3>WEBSITE</h3>
-                </div>
-            </article>
-
-            <article style="background-image: url(multimedia/12.png);">
-                <div>
-                    <h2>EXAMPLE THREE</h2>
-                    <h3>WEBSITE</h3>
-                </div>
-            </article>
-
-            <article style="background-image: url(multimedia/13.png);">
-                <div>
-                    <h2>EXAMPLE UNO</h2>
-                    <h3>WEBSITE</h3>
-                </div>
-            </article>
-
-            <article style="background-image: url(multimedia/14.png);">
-                <div>
-                    <h2>EXAMPLE TWO</h2>
-                    <h3>WEBSITE</h3>
-                </div>
-            </article>
-
-            <article style="background-image: url(multimedia/15.png);">
-                <div>
-                    <h2>EXAMPLE THREE</h2>
-                    <h3>WEBSITE</h3>
-                </div>
-            </article>
-
-            <article style="background-image: url(multimedia/16.png);">
-                <div>
-                    <h2>EXAMPLE UNO</h2>
-                    <h3>WEBSITE</h3>
-                </div>
-            </article>
-
-            <article style="background-image: url(multimedia/17.png);">
-                <div>
-                    <h2>EXAMPLE TWO</h2>
-                    <h3>WEBSITE</h3>
-                </div>
-            </article>
-
-            <article style="background-image: url(multimedia/18.png);">
-                <div>
-                    <h2>EXAMPLE THREE</h2>
-                    <h3>WEBSITE</h3>
-                </div>
-            </article>
-        </main>
-        <!-- fin / nuevos trabajos -->
-
-        <!-- inicio / pie de pagina -->
-        <footer>
-            <p>Living, learning, & leveling up one day at a time.</p>
-            <a href="#header"><i class="fa fa-chevron-circle-up"></i></a>
-        </footer>
-        <!-- fin / pie de pagina -->
-
     </section>
-
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+ 
 </body>
 </html>

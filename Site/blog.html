@@ -11,57 +11,266 @@
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="style1.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="styleBo.css">
 </head>
 <body>
 
-    <section class="gridClassBlog">
+    <section class="container-fluid">
 
-        <!-- Inicio / Barra de redes sociales  -->
-        <nav class="navRedes">
-            <ul class="ulRedes">
-                <li>
-                    <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </li>
-                <li>
-                    <a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
-                </li>
-                <li>
-                    <a href="https://github.com" target="_blank"><i class="fa fa-github"></i></a>
-                </li>
-                <li>
-                    <a href="https://meetup.com" target="_blank"><i class="fa fa-meetup"></i></a>
-                </li>
-            </ul>
-        </nav>
-        <!-- Fin / Barra de redes sociales  -->
+        <section class="row">
 
-        <!-- Inicio / encabezamiento y navegación del sitio  -->
-        <header id="header" class="header">
-            <a href="index.html"><img src="multimedia/perfil1.png" alt="Imagen de perfil"></a>
+                <!-- Inicio - Barra de redes sociales -->
+                <div class="col-1 d-flex flex-column justify-content-center align-items-center sticky-top  navRedes">
 
-            <nav class="navHeader">
-                <ul class="ulHeader">
-                    <li><a href="perfile.html">Perfile</a></li>
-                    <li><a href="perfile.html#Clients">Client Testimonials</a></li>
-                    <li><a href="perfile.html#Contact">Contact Me</a></li>
-                </ul>
-            </nav>
-            <nav class="navHeader">
-                <ul class="ulHeader">
-                    <li><a href="index.html">All Work</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- Fin / encabezamiento y navegación del sitio  -->
+                        <nav >
+                            <ul>
+                                <li>
+                                    <a href="https://google.com" target="_blank">
+                                        <i class="bi bi-google"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com" target="_blank">
+                                        <i class="bi bi-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://linkedin.com/" target="_blank">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com" target="_blank">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
 
-        <!-- Inicio / nuevas publicaciones -->
+                </div>
+                <!-- Fin - Barra de redes sociales -->
+
+                <!-- Header Main Footer -->
+                <div class="col">
+
+                    <!-- Inicio - Header -->
+                    <section class="row mb-3">
+
+                        <!-- Inicio / encabezamiento y navegación del sitio  -->
+                        <header id="header" class="d-flex align-items-end">
+
+                            <a href="index.html"><img src="multimedia/perfil1.png" alt="Imagen de perfil" class="m-4" style="width: 120px;"></a>
+ 
+                            <nav class="navbar navbar-expand-lg">
+                                <div class="container-fluid">
+
+                                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
+
+                                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                                      <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="index.html">Trabajos</a>
+                                      </li>
+
+                                      <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="perfile.html">Perfil</a>
+                                      </li>
+
+                                      <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="perfile.html#Clients">Clientes</a>
+                                      </li>
+
+                                      <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="perfile.html#Contact">Contactame</a>
+                                      </li>
+
+                                      <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+                                      </li>
+
+                                    </ul>
+                                    
+                                  </div>
+                                </div>
+                              </nav>
+
+                        </header>
+                        <!-- Fin / encabezamiento y navegación del sitio  -->
+                        
+                    </section>
+                    <!-- Fin - Header -->
+                    
+                    <!-- Inicio - Main -->
+                    <main class="row">
+
+                        <div class="col-lg-8">
+                            
+                            <div class="card m-5 shadow cardBlog">
+
+                                <img class="card-img-top p-2 cardBlog" src="multimedia/2.png" alt="Imagen de Blog">
+
+                                <div class="card-body">
+                                    <p class="small text-muted">Junio 29, 2022</p>
+                                    <h2 class="card-title">Featured Post Title</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, enim ipsam? Odio quia autem perferendis porro labore dignissimos reprehenderit earum saepe, officiis velit hic quaerat qui quibusdam quis fuga voluptate.
+                                    </p>
+                                    <a class="btn">Read more →</a>
+                                </div>
+
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    
+                                    <div class="card shadow m-3 cardBlog" >
+
+                                        <img class="card-img-top" src="multimedia/17.png" alt="...">
+
+                                        <div class="card-body">
+                                            <p class="small text-muted">Junio 29, 2022</p>
+                                            <h2 class="card-title h4">Post Title</h2>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                                            <a class="btn">Read more →</a>
+                                        </div>
+
+                                    </div>
+                                    
+                                    <div class="card m-3 shadow cardBlog">
+
+                                        <img class="card-img-top" src="multimedia/15.png" alt="...">
+
+                                        <div class="card-body">
+                                            <p class="small text-muted">Junio 29, 2022</p>
+                                            <h2 class="card-title h4">Post Title</h2>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                                            <a class="btn">Read more →</a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-6">
+
+                                    <div class="card m-3 shadow cardBlog">
+
+                                        <img class="card-img-top" src="multimedia/13.png" alt="...">
+
+                                        <div class="card-body">
+                                            <p class="small text-muted">Junio 29, 2022</p>
+                                            <h2 class="card-title h4">Post Title</h2>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                                            <a class="btn">Read more →</a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card m-3 shadow cardBlog">
+
+                                        <img class="card-img-top" src="multimedia/5.png" alt="...">
+
+                                        <div class="card-body">
+                                            <p class="small text-muted">Junio 29, 2022</p>
+                                            <h2 class="card-title h4">Post Title</h2>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                                            <a class="btn">Read more →</a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                            <nav aria-label="Pagination">
+                                
+                                <ul class="pagination justify-content-center my-4">
+                                    <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Nuevo</a></li>
+                                    <li class="page-item active" aria-current="page"><a class="page-link" href="#!">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                                    <li class="page-item disabled"><a class="page-link" href="#!">...</a></li>
+                                    <li class="page-item"><a class="page-link" href="#!">15</a></li>
+                                    <li class="page-item"><a class="page-link" href="#!">Viejo</a></li>
+                                </ul>
+
+                            </nav>
+
+                        </div>
+
+                        <div class="col-lg-4">
+                            
+                            <div class="card m-5 cardBlog">
+                                
+                                <div class="card-body">
+                                    <div class="input-group">
+                                        <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search">
+                                        <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card m-5 cardBlog">
+                                <h5 class="m-3">Categories</h5>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <ul class="list-unstyled mb-0">
+                                                <li><a href="#!">Web Design</a></li>
+                                                <li><a href="#!">HTML</a></li>
+                                                <li><a href="#!">Freebies</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <ul class="list-unstyled mb-0">
+                                                <li><a href="#!">JavaScript</a></li>
+                                                <li><a href="#!">CSS</a></li>
+                                                <li><a href="#!">Tutorials</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+ 
+                    </main>
+                    <!-- Fin - Main -->
+
+                    <!-- Inicio - Footer -->
+                    <section class="row">
+                        
+                        <!-- inicio / pie de pagina -->
+                        <footer class="d-flex align-items-end justify-content-between mt-3">
+
+                            <p>Living, learning, & leveling up one day at a time.</p>
+                            <a href="#header"><i class="bi bi-arrow-up-square m-3 d-flex align-items-center justify-content-center"></i></a>
+                            
+                            
+                        </footer>
+                        <!-- fin / pie de pagina -->
+
+                    </section>
+                    <!-- Fin - Footer -->
+                    
+                </div>
+                <!-- Header Main Footer -->
+            
+        </section>
+        
+    </section>
+
+    
+
+    <!-- <section class="gridClassBlog">
+
         <main class="mainBlog">
 
             <article>
@@ -124,9 +333,7 @@
 
          
         </main>
-        <!-- fin / nuevas publicaciones -->
-
-        <!-- Inicio / barrade blog derecha  -->
+      
         <aside class="asideBlog">
             <h3>Tag:</h3>
             <button>H1</button>
@@ -141,15 +348,11 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias illo mollitia autem ratione quibusdam accusamus veritatis quasi sed rem harum sint fugit, nihil veniam ipsa aspernatur incidunt quo quas distinctio!
             </p>
         </aside>
-        <!-- Fin / barrade blog derecha  -->
+     
 
-        <!-- inicio / pie de pagina -->
-        <footer>
-            <p>Living, learning, & leveling up one day at a time.</p>
-            <a href="#header"><i class="fa fa-chevron-circle-up"></i></a>
-        </footer>
-        <!-- fin / pie de pagina -->
+    </section> -->
 
-    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+ 
 </body>
 </html>
