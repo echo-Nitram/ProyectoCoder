@@ -67,6 +67,96 @@ footer i{
 
 .cardW:hover{
     transform: scale(1.10);
-    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     z-index: 10;
+}
+
+.imgPerfile{
+    border-radius: 100%;
+    border: 5px solid hsl(0, 0%, 90%);
+    width: 100%;
+}
+
+.mainP{
+    border-radius: 10px;
+    margin-bottom: 200px;
+}
+
+.buttonForm{
+    font-size: 40px;
+    border: none;
+    background-color: transparent;
+}
+
+.prueba{
+    height: 50vh;
+    width: 100%;
+    overflow: auto;
+    
+}
+
+.name{
+    justify-content: center;
+}
+
+.cardBlog{
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 90%);
+    border: none;
+}
+
+.page-link{
+    
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .imgPerfile{
+        width: 40%;
+    }
+
+    .imgAndName{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .name{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .p-5 {
+        padding: 0.5rem!important;
+    }
+    
+    .m-5 {
+        margin: 0.5rem!important;
+    }
+
+    header{
+        justify-content: space-between;
+    }
+
+    .navbar>.container-fluid{
+        justify-content: end;
+    } 
+
+
+    .navbar-collapse {
+        position: absolute;
+        background-color: hsl(0, 0%, 70%);
+        top: 50px;
+        padding: 20px;
+        border-radius: 20px 0px 20px 20px;
+        z-index: 10;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    
 }
