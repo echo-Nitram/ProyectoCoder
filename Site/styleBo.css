@@ -6,6 +6,7 @@ body{
 a{
     text-decoration: none;
     color: hsl(0, 0%, 50%);
+    cursor: pointer;
 }
 
 a:hover{
@@ -56,20 +57,64 @@ footer i{
     color: hsl(0, 0%, 30%);
 }
 
+.tite-P{
+    /* background-image: url(multimedia/16.png); */
+    background-color: hsl(0, 0%, 20%);
+    background-size: cover;
+    color: white;
+
+}
+
 .cardW{
-    max-width: 400px;
-    margin: 10px 0;
-}
+    min-width: 100px;
+    max-width: 500px;
 
-.card-img-top{
+    min-height: 100px ;
     max-height: 300px;
+    overflow: hidden;
+
+    margin: 15px 0;
+
+    color: hsl(0, 0%, 90%);
+
 }
 
-.cardW:hover{
-    transform: scale(1.10);
-    transition: all 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    z-index: 10;
+.cardW .card-img-top{
+    position: absolute;
+    height: 100%;
+    z-index: 0;
 }
+
+.title-W{
+    z-index: 1;
+    margin-left: 1rem;
+}
+
+.cardW h4 {
+    margin-top: 1rem ;
+}
+
+.cardW .card-body{
+    z-index: 1;
+    background-color: hsla(0, 0%, 20%, 0.765);
+    margin-top: 300px;
+    border-radius: 10px;
+}
+
+.cardW:hover .card-img-top{
+        transform: scale(1.50);
+        transition: all 3s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+}
+
+.cardW:hover .card-body{
+    transform: translateY(-100%);
+    transition: all 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+.cardW:hover .title-W{
+    display: none;
+}
+
 
 .imgPerfile{
     border-radius: 100%;
@@ -88,6 +133,18 @@ footer i{
     background-color: transparent;
 }
 
+.mainP .card{
+    background-color: hsl(0, 0%, 90%);
+    
+    border: none;
+    width: 100%;
+}
+
+.mainP .card .card-header{
+    
+    border: none;
+}
+
 .twitterScrol{
     height: 50vh;
     width: 100%;
@@ -99,17 +156,12 @@ footer i{
     justify-content: center;
 }
 
-.cardBlog{
+.main-B .card{
     border-radius: 20px;
     overflow: hidden;
-    background-color: hsl(0, 0%, 90%);
+    background-color: hsl(0, 0%, 20%);
     border: none;
-}
-
-.page-link{
-    
-    background-color: hsl(0, 0%, 100%);
-    border: none;
+    color: white;
 }
 
 @media only screen and (max-width: 992px) {
@@ -146,7 +198,6 @@ footer i{
         justify-content: end;
     } 
 
-
     .navbar-collapse {
         position: absolute;
         background-color: hsl(0, 0%, 70%);
@@ -155,8 +206,4 @@ footer i{
         border-radius: 20px 0px 20px 20px;
         z-index: 10;
     }
-}
-
-@media only screen and (max-width: 700px) {
-    
 }
