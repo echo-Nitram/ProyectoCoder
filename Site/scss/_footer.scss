@@ -1,17 +1,13 @@
 // footer
 section{
-
     footer{
-
         background-color: $bg-color4;
         a{
             text-decoration: none;
             cursor: pointer;
-
             i{
                 font-size: 60px;
                 color: $bg-color2;
-                
                 &:hover{
                     transition: all 0.5s;
                     color: $bg-color3;
@@ -19,5 +15,4 @@ section{
             }
         }
     }
-
 }
