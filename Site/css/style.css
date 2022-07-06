@@ -33,6 +33,12 @@ section header nav div div ul {
   margin: 5px;
   padding: 0;
 }
+section header nav div div ul .nav-link {
+  font-weight: 600;
+}
+section header nav div div ul .active {
+  border-bottom: solid 1px black;
+}
 
 main {
   background-color: hsla(0deg, 0%, 90%, 0.8);
