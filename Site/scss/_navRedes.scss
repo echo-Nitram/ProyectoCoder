@@ -1,0 +1,31 @@
+
+// Barra de redes sociales
+.navRedes{
+    background-color: $bg-color1;
+    height: 100vh; 
+    max-width: 100px;
+
+    nav{
+        ul{
+            list-style: none;
+            margin: 5px;
+            padding: 0;
+            li{
+                a{
+                    text-decoration: none;
+                    cursor: pointer;
+
+                    i{
+                        font-size: 30px;
+                        color: $bg-color2;
+                        
+                        &:hover{
+                            transition: all 0.5s;
+                            color: $bg-color3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

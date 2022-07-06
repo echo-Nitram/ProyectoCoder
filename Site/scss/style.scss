@@ -1,0 +1,61 @@
+@import 'variables';
+@import 'navRedes';
+@import 'header';
+@import 'main';
+@import 'footer';
+
+
+body{
+    background-image: url(../multimedia/4977210.jpg);
+}    
+
+// Tite
+.tite-P{
+    background-color: $bg-color2;
+    background-size: cover;
+    color: white;
+}
+
+@media only screen and (max-width: 992px) {
+
+    #img {
+        width: 40%;
+    }
+
+    .imgAndName{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .name{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .p-5 {
+        padding: 0.5rem!important;
+    }
+    
+    .m-5 {
+        margin: 0.5rem!important;
+    }
+
+    header{
+        justify-content: space-between;
+    }
+
+    .navbar>.container-fluid{
+        justify-content: end;
+    } 
+
+    .navbar-collapse {
+        position: absolute;
+        background-color: $bg-color3;
+        top: 50px;
+        padding: 20px;
+        border-radius: 20px 0px 20px 20px;
+        z-index: 10;
+    }
+}

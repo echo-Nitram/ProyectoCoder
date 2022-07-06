@@ -1,0 +1,25 @@
+// header
+section{
+    header{
+        background-color: $bg-color1;
+        
+        a{
+            text-decoration: none;
+            cursor: pointer; 
+
+        }
+        nav{
+            div{
+                div{
+                    ul{
+                        list-style: none;
+                        margin: 5px;
+                        padding: 0;
+                    }
+                }
+                
+            }
+
+        }
+    }
+}

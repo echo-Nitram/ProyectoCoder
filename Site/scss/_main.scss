@@ -1,0 +1,122 @@
+// Main
+main{
+    background-color: $bg-color4;
+}
+
+.mainIndex{
+    div{
+        .cardW{
+            min-width: 100px;
+            max-width: 500px;
+            min-height: 100px ;
+            max-height: 300px;
+            overflow: hidden;
+            margin: 15px 0;
+            color: hsl(0, 0%, 90%);
+            
+            &:hover{
+                .card-img-top{
+                    transform: scale(1.50);
+                    transition: all 3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+                }
+
+                .card-body{
+                    transform: translateY(-100%);
+                    transition: all 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+                }
+
+                .title-W{
+                    display: none;
+                }
+            }
+
+            .card-img-top{
+                position: absolute;
+                height: 100%;
+                z-index: 0;
+            }
+
+            .title-W{
+                z-index: 1;
+                margin-left: 1rem;
+                background-color: $bg-color2;
+            }
+
+            h4{
+                margin-top: 1rem ;
+                
+            }
+
+            .card-body{
+                z-index: 1;
+                background-color: hsla(0, 0%, 20%, 0.765);
+                margin-top: 300px;
+                border-radius: 10px;
+            }
+        
+        }
+    }
+}
+
+.mainP{
+
+    border-radius: 10px;
+    margin-bottom: 200px;
+    overflow: hidden;
+
+    div{
+        div{
+                
+            .imgPerfile{
+                border-radius: 100%;
+                border: 5px solid $bg-color1;
+                width: 100%;
+            }
+
+            div{
+
+                div{
+                    form{
+                        .buttonForm{
+                            font-size: 40px;
+                            border: none;
+                            background-color: transparent;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .card{
+        background-color: hsl(0, 0%, 90%);
+        border: none;
+        width: 100%;
+
+        .card-header{
+            border: none;
+        }
+    }
+
+    .twitterScrol{
+        height: 50vh;
+        width: 100%;
+        overflow: auto;
+        
+    }
+
+    .name{
+        justify-content: center;
+    }
+}
+
+.main-B{
+    .card{
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: $bg-color2;
+        border: none;
+        color: white; 
+    }
+}
