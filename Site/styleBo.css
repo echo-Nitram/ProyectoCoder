@@ -125,6 +125,7 @@ footer i{
 .mainP{
     border-radius: 10px;
     margin-bottom: 200px;
+    overflow: hidden;
 }
 
 .buttonForm{

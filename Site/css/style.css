@@ -1,0 +1,183 @@
+.navRedes {
+  background-color: hsl(0deg, 0%, 90%);
+  height: 100vh;
+  max-width: 100px;
+}
+.navRedes nav ul {
+  list-style: none;
+  margin: 5px;
+  padding: 0;
+}
+.navRedes nav ul li a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.navRedes nav ul li a i {
+  font-size: 30px;
+  color: hsl(0deg, 0%, 30%);
+}
+.navRedes nav ul li a i:hover {
+  transition: all 0.5s;
+  color: hsl(0deg, 0%, 70%);
+}
+
+section header {
+  background-color: hsl(0deg, 0%, 90%);
+}
+section header a {
+  text-decoration: none;
+  cursor: pointer;
+}
+section header nav div div ul {
+  list-style: none;
+  margin: 5px;
+  padding: 0;
+}
+
+main {
+  background-color: hsla(0deg, 0%, 90%, 0.8);
+}
+
+.mainIndex div .cardW {
+  min-width: 100px;
+  max-width: 500px;
+  min-height: 100px;
+  max-height: 300px;
+  overflow: hidden;
+  margin: 15px 0;
+  color: hsl(0deg, 0%, 90%);
+}
+.mainIndex div .cardW:hover .card-img-top {
+  transform: scale(1.5);
+  transition: all 3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.mainIndex div .cardW:hover .card-body {
+  transform: translateY(-100%);
+  transition: all 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+.mainIndex div .cardW:hover .title-W {
+  display: none;
+}
+.mainIndex div .cardW .card-img-top {
+  position: absolute;
+  height: 100%;
+  z-index: 0;
+}
+.mainIndex div .cardW .title-W {
+  z-index: 1;
+  margin-left: 1rem;
+  background-color: hsl(0deg, 0%, 30%);
+}
+.mainIndex div .cardW h4 {
+  margin-top: 1rem;
+}
+.mainIndex div .cardW .card-body {
+  z-index: 1;
+  background-color: hsla(0deg, 0%, 20%, 0.765);
+  margin-top: 300px;
+  border-radius: 10px;
+}
+
+.mainP {
+  border-radius: 10px;
+  margin-bottom: 200px;
+  overflow: hidden;
+}
+.mainP div div .imgPerfile {
+  border-radius: 100%;
+  border: 5px solid hsl(0deg, 0%, 90%);
+  width: 100%;
+}
+.mainP div div div div form .buttonForm {
+  font-size: 40px;
+  border: none;
+  background-color: transparent;
+}
+.mainP .card {
+  background-color: hsl(0deg, 0%, 90%);
+  border: none;
+  width: 100%;
+}
+.mainP .card .card-header {
+  border: none;
+}
+.mainP .twitterScrol {
+  height: 50vh;
+  width: 100%;
+  overflow: auto;
+}
+.mainP .name {
+  justify-content: center;
+}
+
+.main-B .card {
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: hsl(0deg, 0%, 30%);
+  border: none;
+  color: white;
+}
+
+section footer {
+  background-color: hsla(0deg, 0%, 90%, 0.8);
+}
+section footer a {
+  text-decoration: none;
+  cursor: pointer;
+}
+section footer a i {
+  font-size: 60px;
+  color: hsl(0deg, 0%, 30%);
+}
+section footer a i:hover {
+  transition: all 0.5s;
+  color: hsl(0deg, 0%, 70%);
+}
+
+body {
+  background-image: url(../multimedia/4977210.jpg);
+}
+
+.tite-P {
+  background-color: hsl(0deg, 0%, 30%);
+  background-size: cover;
+  color: white;
+}
+
+@media only screen and (max-width: 992px) {
+  #img {
+    width: 40%;
+  }
+  .imgAndName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .name {
+    flex-direction: row;
+    align-items: center;
+  }
+  .p-5 {
+    padding: 0.5rem !important;
+  }
+  .m-5 {
+    margin: 0.5rem !important;
+  }
+  header {
+    justify-content: space-between;
+  }
+  .navbar > .container-fluid {
+    justify-content: end;
+  }
+  .navbar-collapse {
+    position: absolute;
+    background-color: hsl(0deg, 0%, 70%);
+    top: 50px;
+    padding: 20px;
+    border-radius: 20px 0px 20px 20px;
+    z-index: 10;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
