@@ -8,36 +8,12 @@
   margin: 5px;
   padding: 0;
 }
-.navRedes nav ul li a {
-  text-decoration: none;
-  cursor: pointer;
-}
-.navRedes nav ul li a i {
-  font-size: 30px;
-  color: hsl(0deg, 0%, 30%);
-}
-.navRedes nav ul li a i:hover {
-  transition: all 0.5s;
-  color: hsl(0deg, 0%, 70%);
-}
 
 section header {
   background-color: hsl(0deg, 0%, 90%);
 }
-section header a {
-  text-decoration: none;
-  cursor: pointer;
-}
 section header nav div div ul {
   list-style: none;
-  margin: 5px;
-  padding: 0;
-}
-section header nav div div ul .nav-link {
-  font-weight: 600;
-}
-section header nav div div ul .active {
-  border-bottom: solid 1px black;
 }
 
 main {
@@ -123,21 +99,49 @@ main {
   border: none;
   color: white;
 }
+.main-B .search {
+  border: none;
+  border-radius: 10px;
+  width: 70%;
+}
 
 section footer {
   background-color: hsla(0deg, 0%, 90%, 0.8);
 }
-section footer a {
-  text-decoration: none;
-  cursor: pointer;
+
+.active, .disabled {
+  display: block;
+  margin: 10px;
+  text-decoration: double;
 }
-section footer a i {
-  font-size: 60px;
-  color: hsl(0deg, 0%, 30%);
+.active:hover, .disabled:hover {
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  color: black;
 }
-section footer a i:hover {
-  transition: all 0.5s;
-  color: hsl(0deg, 0%, 70%);
+
+.disabled {
+  color: gray;
+}
+
+.active {
+  color: red;
+  text-decoration: overline;
+}
+
+.rs {
+  font-size: 2rem;
+}
+
+.bt {
+  padding: 10px;
+  margin: 0px;
+  border: solid 3px gray;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+}
+.bt:hover {
+  color: green;
 }
 
 body {

@@ -3,6 +3,8 @@ main{
     background-color: $bg-color4;
 }
 
+
+
 .mainIndex{
     div{
         .cardW{
@@ -10,9 +12,9 @@ main{
             max-width: 500px;
             min-height: 100px ;
             max-height: 300px;
-            overflow: hidden;
+            overflow: map-get($card, overflow);
             margin: 15px 0;
-            color: hsl(0, 0%, 90%);
+            color: map-get($card, color1);
             
             &:hover{
                 .card-img-top{
@@ -51,7 +53,7 @@ main{
                 z-index: 1;
                 background-color: hsla(0, 0%, 20%, 0.765);
                 margin-top: 300px;
-                border-radius: 10px;
+                border-radius: map-get($card, border-radius);
             }
         
         }
@@ -60,9 +62,9 @@ main{
 
 .mainP{
 
-    border-radius: 10px;
+    border-radius: map-get($card, border-radius);
     margin-bottom: 200px;
-    overflow: hidden;
+    overflow: map-get($card, overflow);
 
     div{
         div{
@@ -90,12 +92,12 @@ main{
     }
 
     .card{
-        background-color: hsl(0, 0%, 90%);
-        border: none;
+        background-color: map-get($card, color1);
+        border: map-get($card, borde);
         width: 100%;
 
         .card-header{
-            border: none;
+            border: map-get($card, borde);
         }
     }
 
@@ -114,9 +116,16 @@ main{
 .main-B{
     .card{
         border-radius: 20px;
-        overflow: hidden;
+        overflow: map-get($card, overflow);
         background-color: $bg-color2;
-        border: none;
+        border: map-get($card, borde);
         color: white; 
     }
+
+    .search{
+        border: none;
+        border-radius: 10px;
+        width: 70%;
+    }
 }
+ 

@@ -1,0 +1,39 @@
+
+%botones {
+    display: block;
+    margin: 10px;
+    text-decoration: double;
+
+    &:hover { 
+        transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        color: black;
+    }
+}
+
+.disabled{
+    @extend %botones;
+    color: gray;
+}
+
+.active{
+    @extend %botones;
+    color: red;
+    text-decoration: overline;
+}
+
+.rs{
+    font-size: 2rem;
+}
+
+.bt{
+    padding: 10px;
+    margin: 0px;
+    border: solid 3px gray;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+
+    &:hover{
+        color: green;
+    }
+}
